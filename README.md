@@ -36,6 +36,9 @@ skill-npm unuse <skill>
 
 # Search
 skill-npm search <keyword>
+
+# List skills in stores and current project
+skill-npm list
 ```
 
 ## Options

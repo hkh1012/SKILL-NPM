@@ -3,6 +3,7 @@ import { addStore, listStores, removeStore, updateStore } from './commands/store
 import { use } from './commands/use.js';
 import { unuse } from './commands/unuse.js';
 import { search } from './commands/search.js';
+import { list } from './commands/list.js';
 
 export function createCli() {
   const program = new Command();
@@ -70,6 +71,13 @@ export function createCli() {
     .description('Search for skills across all stores')
     .action(async (keyword) => {
       await search(keyword, program.opts());
+    });
+
+  program
+    .command('list')
+    .description('List skills in stores and current project')
+    .action(async () => {
+      await list(program.opts());
     });
 
   return program;
