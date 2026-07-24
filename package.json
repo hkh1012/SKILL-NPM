@@ -1,0 +1,28 @@
+{
+  "name": "skill-npm",
+  "version": "1.0.0",
+  "description": "Local skill warehouse manager for Claude Code skills",
+  "main": "src/cli.js",
+  "type": "module",
+  "bin": {
+    "skill-npm": "./bin/skill-npm.js"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js"
+  },
+  "keywords": [
+    "claude",
+    "skill",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.5.2",
+    "chalk": "^5.6.2",
+    "commander": "^15.0.0"
+  }
+}
